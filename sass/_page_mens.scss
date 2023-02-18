@@ -1,0 +1,1325 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap");
+
+// MAIN VISUAL
+.bl_mv.bl_mv__mens {
+  background: url(../images/men_mv_pc.jpg) no-repeat center/cover;
+  height: 30vw !important;
+  max-height: 30vw !important;
+  min-height: 600px !important;
+
+  .bl_mv_col {
+    display: none;
+  }
+
+  @include mq(sp) {
+    // ★大きさ設定:SP
+    //		$w: 640*$sp; // 背景画像の幅px
+    //		$h: 680*$sp; // 背景画像の高さpx
+    //
+    //		// ★スライドがないときは有効化
+    //		height: #{($h/$w)*100}vw;
+    background: url(../images/men_mv_sp.jpg) no-repeat center/cover;
+    height: resize(600px) !important;
+    min-height: resize(600px) !important;
+  }
+}
+
+.ly_main__mens {
+  .bl_path_wrapper {
+    display: none !important;
+  }
+}
+
+// GENERAL STYLES
+.bl_sect__mens {
+  & > * {
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Noto Sans JP";
+
+    @include mq(sp) {
+      font-size: resize(26px);
+    }
+  }
+
+  .heading-secondary {
+    font-family: "Noto Sans JP";
+    font-size: 46px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.15px;
+    text-align: left;
+    color: $c-second;
+    text-align: center;
+
+    @include mq(sp) {
+      font-size: resize(44px);
+    }
+
+    &-sm {
+      font-size: 36px;
+
+      @include mq(sp) {
+        font-size: resize(44px);
+      }
+    }
+  }
+
+  .sub-ttl {
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-align: center;
+  }
+
+  .ttl-ja {
+    letter-spacing: 1.4px;
+  }
+}
+
+// section1
+.bl_sect__mens1 {
+  padding-bottom: 46px;
+  background-image: linear-gradient(to right, #e6eaed, #f0f2f4);
+  margin-top: -1px;
+
+  @include mq(sp) {
+    padding-bottom: resize(53px);
+    margin-top: 0;
+  }
+
+  .men1 {
+    &_ttl {
+      height: 160px;
+      background-image: linear-gradient(
+        to right,
+        rgba(#568ea7, 8),
+        rgba(#77a9be, 0.8)
+      );
+      box-shadow: 0 0 9.8px 0.2px rgba(0, 0, 0, 0.44);
+      font-size: 24px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #fff;
+      clip-path: polygon(0 0, 100% 0, 100% 30%, 50% 100%, 0 30%);
+
+      @include mq(sp) {
+        font-size: resize(26px);
+        height: resize(150px);
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+      }
+
+      span:first-child {
+        margin-top: 20px;
+        display: inline-block;
+
+        @include mq(sp) {
+          margin-top: 8px;
+        }
+      }
+
+      span:last-child {
+        font-size: 40px;
+
+        @include mq(sp) {
+          font-size: resize(40px);
+        }
+      }
+    }
+
+    &_ly_flex {
+      @include flex-center;
+      gap: 30px;
+      margin-top: 34px;
+
+      @include mq(sp) {
+        gap: resize(34px);
+        margin-top: resize(34px);
+      }
+    }
+
+    &_cons {
+      @include flex-center;
+      flex-direction: column;
+      width: 184px;
+      height: 184px;
+      border-radius: 50%;
+      background: #004986;
+      font-size: 26px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: 1.3px;
+      color: #fff100;
+
+      @include mq(sp) {
+        font-size: resize(28px);
+        width: resize(190px);
+        height: resize(190px);
+      }
+    }
+
+    &_cons-list {
+    }
+
+    &_cons-item {
+      font-size: 30px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 1.5px;
+      color: $c-pri;
+      display: flex;
+      align-items: end;
+      gap: 8px;
+
+      @include mq(sp) {
+        font-size: resize(30px);
+      }
+
+      img {
+        flex: 0 0 36px;
+        transform: translateY(-10px);
+
+        @include mq(sp) {
+          flex: 0 0 resize(36px);
+          width: 20px;
+          transform: translateY(-5px);
+        }
+      }
+
+      span {
+        font-size: 50px;
+
+        @include mq(sp) {
+          font-size: resize(50px);
+        }
+      }
+    }
+
+    &_txt {
+      font-weight: 800;
+      font-style: italic;
+
+      @include mq(sp) {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// section2
+.bl_sect__mens2 {
+  padding: 92px 0 97px 0;
+
+  @include mq(sp) {
+    padding: resize(54px) 0;
+  }
+
+  .men2 {
+  }
+}
+
+// section3
+.bl_sect__mens3 {
+  background-image: linear-gradient(to right, #93bbcc, #97bac8);
+
+  @include mq(sp) {
+    background-image: none;
+    background-color: #80a9b7;
+  }
+
+  .ly_cont {
+    max-width: 1280px !important;
+    margin: 0 auto;
+    transform: translateX(-100px);
+
+    @include mq(sp) {
+      transform: translateX(0);
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .heading-secondary,
+  .ttl-ja {
+    text-align: left !important;
+
+    @include mq(sp) {
+      text-align: center !important;
+    }
+  }
+
+  .heading-secondary {
+    margin-left: -20px;
+
+    @include mq(sp) {
+      margin-left: 0;
+      font-size: resize(44px);
+    }
+  }
+
+  .ttl-ja {
+    font-weight: 500;
+    letter-spacing: 0.7px;
+
+    @include mq(sp) {
+      font-size: resize(24px);
+    }
+  }
+
+  .men3 {
+    &_content-box {
+      height: 440px;
+      display: flex;
+
+      @include mq(sp) {
+        height: auto;
+        flex-direction: column;
+      }
+    }
+
+    &_txt-box {
+      flex: 0 0 700px;
+      background-color: #e6eef1;
+      transform: skewX(-25deg) translateX(110px);
+      padding: 0 100px;
+      padding-top: 50px;
+      position: relative;
+
+      @media screen and (max-width: 1500px) {
+        flex: 0 0 45%;
+        margin-left: 80px;
+        transform: skewX(-20deg) translateX(110px);
+      }
+
+      @include mq(sp) {
+        transform: skewY(9deg) translateY(-60px);
+        flex: 0 0 auto;
+        padding: 80px 30px;
+        margin-bottom: 30px;
+        order: 1;
+        margin-left: 0;
+      }
+
+      @media screen and (max-width: 470.9px) {
+        transform: skewY(9deg) translateY(-30px);
+        padding: 50px 20px;
+        padding-top: 30px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background-color: #9ec4d4;
+        width: 45px;
+        height: 100%;
+
+        @include mq(sp) {
+          left: 0;
+          bottom: 0;
+          top: auto;
+          transform: translateX(0);
+          background-color: rgba(#9ec4d4, 0.7);
+          width: 100%;
+          height: 40px;
+        }
+
+        @media screen and (max-width: 470.9px) {
+          height: 20px;
+        }
+      }
+
+      & > * {
+        transform: skewX(25deg);
+
+        @media screen and (max-width: 1500px) {
+          transform: skewX(20deg);
+        }
+
+        @include mq(sp) {
+          transform: skewY(-9deg);
+        }
+      }
+    }
+
+    &_txt {
+      margin-top: 36px;
+      padding-left: 70px;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.25;
+      letter-spacing: 0.8px;
+
+      @media screen and (max-width: 1500px) {
+        font-size: 14px;
+        padding-left: 40px;
+      }
+
+      @include mq(sp) {
+        margin-top: resize(52px);
+        text-align: center;
+        font-size: resize(28px);
+        padding: 0;
+      }
+    }
+
+    &_img-box {
+      flex: 0 0 760px;
+      position: relative;
+
+      @media screen and (max-width: 1500px) {
+        flex: 0 0 50%;
+      }
+
+      @include mq(sp) {
+        flex: 0 0 auto;
+        margin-top: 40px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(177, 199, 212, 0.6);
+        height: 100%;
+        width: 100px;
+        transform: skew(-25deg) translateX(-100%);
+
+        @media screen and (max-width: 1500px) {
+          transform: skew(-21.4deg) translateX(-80%);
+        }
+
+        @include mq(sp) {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 40px;
+          transform: translateY(100%) skewY(9deg);
+        }
+
+        @media screen and (max-width: 470.9px) {
+          transform: translateY(96%) skewY(9deg);
+          height: 30px;
+          background: rgba(#80a9b7, 0.4);
+        }
+      }
+
+      img {
+        height: 100%;
+        transform: skew(-0.5deg);
+
+        @include mq(sp) {
+          content: url(../images/men_concept-img_sp.png);
+          transform: skew(0.2deg);
+        }
+      }
+    }
+  }
+}
+
+// section4
+.bl_sect__mens4 {
+  padding: 74px 0 80px 0;
+  background-image: url(../images/men_strength-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq(sp) {
+    background-image: url(../images/men_strength-bg_sp.jpg);
+    padding: resize(85px) 0;
+  }
+
+  .ttl-ja {
+    text-align: center;
+  }
+
+  .men4 {
+    &_ly_flex {
+      @include dp-flex(50px, 25px);
+      justify-content: center;
+      margin-top: 36px;
+
+      @include mq(sp) {
+        margin-top: resize(74px);
+      }
+    }
+
+    &_flex_item {
+      flex: 0 0 300px;
+      height: 422px;
+
+      @include mq(sp) {
+        flex: 0 0 100%;
+      }
+
+      @include mq(sp) {
+        &_1 {
+          .men4_img {
+            content: url(../images/men_str1_sp.jpg);
+          }
+        }
+
+        &_2 {
+          .men4_img {
+            content: url(../images/men_str2_sp.jpg);
+          }
+        }
+
+        &_3 {
+          .men4_img {
+            content: url(../images/men_str3_sp.jpg);
+          }
+        }
+      }
+    }
+
+    &_img {
+      height: 300px;
+      object-fit: cover;
+
+      @include mq(sp) {
+        height: auto;
+      }
+    }
+
+    &_cap {
+      font-size: 22px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.45;
+      letter-spacing: 1.1px;
+      text-align: center;
+      background: $c-pri;
+      color: #fff;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include mq(sp) {
+        font-size: resize(34px);
+        line-height: 1.35;
+        letter-spacing: 1.7px;
+        height: resize(170px);
+      }
+    }
+  }
+}
+
+// section5
+.bl_sect__mens5 {
+  padding-bottom: 50px;
+  background-image: url(../images/men_blue-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq(sp) {
+    background-image: url(../images/men_blue-bg_sp.jpg);
+  }
+
+  .men5 {
+    &_main-ttl {
+      height: 100px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.8;
+      letter-spacing: 2px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #13b5b1;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 90%);
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        width: 126px;
+        height: 50px;
+        background: #13b5b1;
+
+        @include mq(sp) {
+          width: resize(100px);
+          height: resize(40px);
+          letter-spacing: 0;
+          margin-top: -5px;
+          padding: 5px 0;
+        }
+      }
+
+      @include mq(sp) {
+        font-size: resize(34px);
+        height: resize(100px);
+      }
+    }
+
+    &_ly_flex {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-top: 120px;
+
+      @include mq(sp) {
+        gap: resize(30px);
+        margin-top: resize(120px);
+      }
+    }
+
+    &_flex_item {
+      position: relative;
+      padding: 50px;
+      background-color: #fff;
+
+      @include mq(sp) {
+        padding: resize(22px);
+      }
+
+      &::after {
+        position: absolute;
+        top: -10px;
+        left: -1px;
+        width: 260px;
+        height: 60px;
+        color: #fff;
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+        font-size: 30px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.07;
+        letter-spacing: 1.5px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+
+        @include mq(sp) {
+          font-size: resize(28px);
+          width: 136.5px;
+          height: 25px;
+          clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+          letter-spacing: 0;
+          padding-left: 10px;
+          top: -5px;
+          padding-bottom: 2px;
+        }
+      }
+
+      &_1 {
+        border: solid 10px #448aca;
+        padding-top: 80px;
+
+        @include mq(sp) {
+          padding-top: 60px;
+          border: solid 7px #448aca;
+        }
+
+        &::after {
+          content: "顔・ヒゲ脱毛";
+          background: #448aca;
+        }
+
+        figure img {
+          margin-bottom: 63px;
+
+          @include mq(sp) {
+            content: url(../images/men_face_sp.png);
+          }
+        }
+
+        .men5_ly_sm-flex {
+          display: flex;
+          align-items: center;
+          flex-direction: row !important;
+          gap: 30px;
+
+          @include mq(sp) {
+            flex-direction: column !important;
+            gap: resize(25px);
+          }
+
+          & > * {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @include mq(sp) {
+              padding: resize(22px) 0;
+            }
+          }
+
+          .men5 {
+            &_left-box {
+              width: 330px;
+              height: 140px;
+              background-color: #448aca;
+
+              @include mq(sp) {
+                width: resize(500px);
+                height: resize(151px);
+              }
+            }
+
+            &_left-txt {
+              font-size: 24px;
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.42;
+              letter-spacing: 1.2px;
+              text-align: center;
+
+              @include mq(sp) {
+                font-size: resize(28px);
+              }
+            }
+
+            &_price-num {
+              font-size: 30px;
+              font-weight: 600;
+
+              @include mq(sp) {
+                font-size: resize(32px);
+              }
+            }
+
+            &_yen {
+              font-size: 20px;
+
+              @include mq(sp) {
+                font-size: resize(22px);
+              }
+            }
+
+            &_right-box {
+              width: 540px;
+              height: 140px;
+              color: #fff;
+              background-image: url(../images/men_face-blue-bg.jpg);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              font-size: 24px;
+              font-weight: 500;
+
+              p:nth-child(2) {
+                font-size: 26px;
+                color: #fff100;
+                font-weight: bold;
+
+                @include mq(sp) {
+                  font-size: resize(28px);
+                }
+              }
+
+              @include mq(sp) {
+                width: resize(500px);
+                height: resize(201px);
+                font-size: resize(28px);
+                background-image: url(../images/men_face-blue-bg_sp.jpg);
+              }
+            }
+          }
+        }
+      }
+
+      &_2 {
+        border: solid 10px #80c269;
+        padding-top: 103px;
+
+        @include mq(sp) {
+          padding-top: 30.5px;
+          border: solid 7px #80c269;
+        }
+
+        &::after {
+          content: "部分脱毛";
+          background: #80c269;
+        }
+
+        figure img {
+          margin-bottom: 45px;
+
+          @include mq(sp) {
+            content: url(../images/men_part_sp.jpg);
+          }
+        }
+
+        .men5_txt-box {
+          background: #80c269;
+        }
+      }
+
+      &_3 {
+        border: solid 10px #009e96;
+        padding-top: 44px;
+
+        @include mq(sp) {
+          border: solid 7px #009e96;
+        }
+
+        &::after {
+          content: "全身脱毛";
+          background: #009e96;
+        }
+
+        figure img {
+          margin: 0 0 20px 100px;
+
+          @include mq(sp) {
+            content: url(../images/men_whole_sp.jpg);
+            margin: 0;
+          }
+        }
+
+        .men5_txt-box {
+          background: #13b5b1;
+
+          @include mq(sp) {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    &_img {
+    }
+
+    &_txt-box {
+      max-width: 900px;
+      min-height: 140px;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &_txt {
+      font-size: 24px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.42;
+      letter-spacing: 1.2px;
+
+      @include mq(sp) {
+        font-size: resize(28px);
+        letter-spacing: 0;
+      }
+    }
+
+    &_price {
+      font-size: 30px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.07;
+      letter-spacing: 1.5px;
+
+      span {
+        font-size: 20px;
+      }
+
+      @include mq(sp) {
+        font-size: resize(32px);
+      }
+    }
+  }
+}
+
+// section6
+.bl_sect__mens6 {
+  padding: 92px 0 194px 0;
+
+  @include mq(sp) {
+    padding: resize(50px) 0;
+  }
+
+  .bl_lp_cta {
+    margin-bottom: 105px;
+
+    @include mq(sp) {
+      margin-bottom: resize(80px);
+    }
+  }
+
+  .men6 {
+    &_qa-ttl {
+      @include mq(sp) {
+        img {
+          content: url(../images/men_qa-top_sp.png);
+          width: 88%;
+        }
+      }
+    }
+
+    &_ly_flex {
+      max-width: 1160px;
+      height: 1200px;
+      padding-top: 190px;
+      border-radius: 50px;
+      background-image: url(../images/men_bg-caro.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: -40px;
+      display: flex;
+      flex-direction: column;
+      gap: 140px;
+      padding-top: 190px;
+
+      @include mq(sp) {
+        background-image: url(../images/men_bg-caro_sp.jpg);
+        padding-top: 200px;
+        height: auto;
+        gap: 80px;
+        padding-bottom: resize(260px);
+        border-radius: 40px;
+        margin-top: -20px;
+      }
+    }
+
+    &_flex_item {
+      height: 220px;
+      background-color: #fff;
+      padding: 67px 46px 53px 30px;
+      position: relative;
+      border-radius: 20px;
+      max-width: 900px;
+
+      @include mq(sp) {
+        height: auto;
+        padding: resize(70px) resize(30px);
+        width: resize(520px);
+      }
+
+      &_1 {
+        transform: translateX(180px);
+
+        @include mq(sp) {
+          transform: translateX(43px);
+        }
+
+        .men6 {
+          &_ques {
+            background-color: #13b5b1;
+            left: -100px;
+            min-width: 440px;
+
+            @include mq(sp) {
+              left: -20px;
+            }
+
+            &::after {
+              background: #13b5b1;
+              bottom: 0;
+              right: 100px;
+              transform: translateY(95%);
+
+              @include mq(sp) {
+                right: resize(50px);
+              }
+            }
+          }
+
+          &_ans {
+            &-label {
+              color: #13b5b1;
+            }
+
+            &-txt {
+            }
+          }
+
+          &_auth {
+            right: 0;
+            transform: translate(100px, -170px);
+
+            @include mq(sp) {
+              transform: translate(30px, -140px);
+
+              img {
+                content: url(../images/men_qa1_sp.png);
+              }
+            }
+          }
+        }
+      }
+
+      &_2 {
+        transform: translateX(80px);
+
+        @include mq(sp) {
+          transform: translateX(11px);
+          margin-top: 80px;
+        }
+
+        .men6 {
+          &_ques {
+            background-color: #3286a9;
+            right: -140px !important;
+            min-width: 460px;
+
+            @include mq(sp) {
+              right: -36.25px !important;
+            }
+
+            &::after {
+              background: #3286a9;
+              bottom: 0;
+              left: 140px;
+              transform: translateY(95%);
+
+              @include mq(sp) {
+                left: resize(50px) !important;
+              }
+            }
+          }
+
+          &_ans {
+            &-label {
+              color: #3286a9;
+            }
+
+            &-txt {
+              font-size: 14px;
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              letter-spacing: 0.35px;
+              text-align: justify;
+            }
+          }
+
+          &_auth {
+            left: 0;
+            transform: translate(-100px, -110px);
+
+            @include mq(sp) {
+              transform: translate(-20px, -140px);
+
+              img {
+                content: url(../images/men_qa2_sp.png);
+              }
+            }
+          }
+        }
+      }
+
+      &_3 {
+        transform: translateX(180px);
+
+        @include mq(sp) {
+          transform: translateX(43px);
+        }
+
+        .men6 {
+          &_ques {
+            background-color: #80c269;
+            left: -100px;
+            min-width: 440px;
+
+            @include mq(sp) {
+              min-width: auto;
+              left: -20px;
+            }
+
+            &::after {
+              background: #80c269;
+              bottom: 0;
+              right: 100px;
+              transform: translateY(95%);
+
+              @include mq(sp) {
+                right: resize(50px);
+              }
+            }
+          }
+
+          &_ans {
+            &-label {
+              color: #80c269;
+            }
+
+            &-txt {
+            }
+          }
+
+          &_auth {
+            right: 160px;
+            top: auto !important;
+            transform: translateY(10px);
+
+            @include mq(sp) {
+              right: -30px;
+              transform: translateY(0);
+
+              img {
+                content: url(../images/men_qa3_sp.png);
+              }
+            }
+          }
+        }
+      }
+
+      .men6 {
+        &_ques {
+          height: 110px;
+          border-radius: 30px;
+          color: #fff;
+          position: absolute;
+          top: 0;
+          transform: translateY(-80%);
+          padding: 0 43px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          @include mq(sp) {
+            min-width: auto;
+            width: resize(470px);
+            height: resize(80px);
+            border-radius: resize(16px);
+            padding: 0;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 21px;
+            height: 26px;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+
+            @include mq(sp) {
+              width: resize(21px);
+              height: resize(31px);
+            }
+          }
+
+          &-label {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+
+            @include mq(sp) {
+              font-size: resize(60px);
+            }
+          }
+
+          &-txt {
+            font-size: 26px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.65px;
+
+            @include mq(sp) {
+              font-size: resize(30px);
+              letter-spacing: 0;
+            }
+          }
+        }
+
+        &_ans {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+
+          @include mq(sp) {
+            gap: resize(25px);
+          }
+
+          &-label {
+            font-family: Roboto;
+            font-size: 80px;
+            font-weight: bold;
+
+            @include mq(sp) {
+              font-size: resize(60px);
+            }
+          }
+
+          &-txt {
+            @include mq(sp) {
+              font-size: resize(26px);
+            }
+          }
+        }
+
+        &_auth {
+          position: absolute;
+          top: 0;
+
+          @include mq(sp) {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// section7
+.bl_sect__mens7 {
+  padding: 84px 0 94px 0;
+  background-image: url(../images/men_bg-grey.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include mq(sp) {
+    padding: resize(70px) 0 resize(60px) 0;
+    background-image: url(../images/men_bg-grey_sp.jpg);
+  }
+
+  .ttl-ja {
+    text-align: center;
+  }
+
+  .men7 {
+    &_ly_flex {
+      @include dp-flex(80px, 22px);
+      justify-content: center;
+      max-width: 1080px;
+      margin: 0 auto;
+      margin-top: 70px;
+      height: 280px;
+
+      @include mq(sp) {
+        height: auto;
+        margin-top: resize(70px);
+      }
+    }
+
+    &_flex_item {
+      flex: 0 0 50%;
+      position: relative;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 80px;
+
+      &:first-child {
+        @include mq(sp) {
+          order: 1;
+        }
+      }
+
+      @include mq(sp) {
+        flex: 0 0 resize(500px);
+        align-items: center;
+        padding: 0 resize(32px);
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        background: #3286a9;
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &_ttl {
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-align: left;
+      color: #3286a9;
+
+      @include mq(sp) {
+        font-size: resize(30px);
+        letter-spacing: 3px;
+      }
+    }
+
+    &_txt {
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.86;
+      letter-spacing: 0.35px;
+      text-align: justify;
+      color: #111;
+      margin-top: 40px;
+
+      @include mq(sp) {
+        margin-top: resize(45px);
+        font-size: resize(26px);
+        line-height: 1.62;
+        letter-spacing: 0.65px;
+      }
+    }
+  }
+}
+
+// section8
+.bl_sect__mens8 {
+  padding: 90px 0;
+
+  @include mq(sp) {
+    padding: resize(50px) 0;
+  }
+
+  .men8 {
+  }
+}
+
+// section9
+.bl_sect__mens9 {
+  background-color: #959595;
+  padding: 72px 0 114px 0;
+
+  @include mq(sp) {
+    padding: resize(48px) 0 resize(62px) 0;
+  }
+
+  .men9 {
+  }
+}
